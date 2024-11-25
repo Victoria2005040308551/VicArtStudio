@@ -1,0 +1,243 @@
+/* Reset de margens e paddings */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+/* Body principal */
+body {
+    line-height: 1.6;
+    color: #333;
+    text-align: center; /* Centraliza todo o conteúdo no corpo da página */
+    background-color: #f0f0f0; /* Cor de fundo para o restante da página */
+}
+
+/* Cabeçalho */
+header {
+    padding: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+
+}
+
+/* Logo Grande no topo */
+.logo-grande {
+    margin: 40px 0; /* Espaçamento superior e inferior */
+}
+
+.logo-grande img {
+    max-width: 250px; /* Ajuste para o tamanho desejado */
+    width: 100%;
+    height: auto;
+}
+
+/* Navegação no cabeçalho */
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    justify-content: center; /* Centraliza os itens */
+    gap: 30px; /* Espaço entre os itens */
+    margin-top: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #006569;
+    font-size: 16px;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #ff6600; /* Cor de destaque ao passar o mouse */
+}
+
+
+/* Seção Principal (Hero) */
+.hero {
+    background-color: #4cfae0; /* Cor de fundo da seção principal */
+    padding: 60px 20px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 60vh;
+}
+
+.hero h1 {
+    font-size: 42px;
+    color: #000000;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 18px;
+    max-width: 600px;
+    color: #000000;
+    margin-bottom: 30px;
+}
+
+.cta-button {
+    background-color: #ff6600;
+    color: #fff;
+    padding: 12px 25px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 18px;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+.cta-button:hover {
+    background-color: #e05a00;
+}
+
+/* Rodapé */
+footer {
+    background-color: #ffffff;
+    color: white;
+    padding: 20px 0;
+    margin-top: 40px;
+}
+
+footer .social-links a {
+    color: #ff6600;
+    text-decoration: none;
+    margin: 0 10px;
+    transition: color 0.3s;
+}
+
+footer .social-links a:hover {
+    color: #e05a00;
+}
+
+/* Estilos Responsivos (Para dispositivos móveis e tablets) */
+@media (max-width: 768px) {
+    .hero h1 {
+        font-size: 30px; /* Ajuste do tamanho da fonte no título */
+    }
+
+    .hero p {
+        font-size: 16px; /* Ajuste do tamanho da fonte no parágrafo */
+        max-width: 90%;
+    }
+
+    nav ul {
+        flex-direction: column; /* Alinha os itens verticalmente */
+        gap: 15px;
+    }
+
+    nav ul li a {
+        font-size: 18px; /* Aumenta o tamanho da fonte nos links de navegação */
+    }
+
+    .cta-button {
+        font-size: 16px;
+        padding: 10px 20px;
+    }
+
+    footer .social-links a {
+        font-size: 14px;
+    }
+}
+
+/* Galeria de Trabalhos */
+#trabalhos {
+    padding: 80px 20px;
+    background-color: #4cfae0;
+    text-align: center;
+}
+
+#trabalhos h2 {
+    font-size: 36px;
+    margin-bottom: 40px;
+    color: #333;
+}
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); /* Ajuste para imagens menores */
+    gap: 20px;
+    justify-items: center; /* Garante que as imagens fiquem centralizadas */
+}
+
+.gallery-item {
+    background-color: #fdffff;
+    border: 1px solid #ddd;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s;
+    max-width: 200px; /* Limita o tamanho das imagens */
+    width: 100%;
+}
+
+.gallery-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+.gallery-item:hover {
+    transform: scale(1.02);
+}
+
+#sobre {
+    background-color: #4cfae0; /* Cor de fundo para a seção 'Sobre a Marca' */
+    padding: 40px 20px;
+    text-align: center;
+}
+
+#contacto {
+    background-color: #4cfae0; /* Cor de fundo para a seção 'Contato' */
+    padding: 40px 20px;
+    text-align: left;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+/* Título da seção de Contato */
+#contacto h2 {
+    font-size: 36px;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+/* Estilo dos rótulos do formulário */
+#contacto label {
+    display: block; /* Faz o rótulo ocupar a linha inteira */
+    font-size: 16px;
+    margin-bottom: 8px;
+}
+
+/* Estilo dos campos de entrada do formulário */
+#contacto input,
+#contacto textarea {
+    width: 100%; /* Garante que os campos ocupem toda a largura disponível */
+    padding: 10px;
+    margin-bottom: 15px; /* Espaço entre os campos */
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+/* Estilo do botão de envio */
+#contacto button {
+    background-color: #009872;
+    color: white;
+    padding: 12px 25px;
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#contacto button:hover {
+    background-color: #e05a00;
+}
